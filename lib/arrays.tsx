@@ -8,7 +8,7 @@ export const arrays = {
     description: "I am a high school student starting out in software development.",
     subDescription: "I have created this website to show projects that I created in the past.",
     
-    // ▼▼▼ ここを配列に変更しました ▼▼▼
+    // English`
     projects: [
       {
         title: "My Portfolio Site",
@@ -16,7 +16,7 @@ export const arrays = {
         status: "Now Viewing",
         tags: ["Next.js", "React", "Tailwind CSS"],
         demoUrl: "",
-        repoUrl: "https://github.com/your-repo/portfolio",
+        repoUrl: "https://github.com/SezaimaruHaruchika/portfolio-site",
         imageUrl: "/portfolio.png",
       },
       {
@@ -43,7 +43,7 @@ export const arrays = {
     description: "現在高校生のエンジニアです。",
     subDescription: "過去に作ったプロジェクトをこちらで紹介しています。",
 
-    // ▼▼▼ 日本語版も同じ順番で配列にします ▼▼▼
+    // ▼▼▼ 日本語 ▼▼▼
     projects: [
       {
         title: "ポートフォリオサイト",
@@ -51,7 +51,7 @@ export const arrays = {
         status: "表示中",
         tags: ["Next.js", "React", "Tailwind CSS"],
         demoUrl: "",
-        repoUrl: "https://github.com/your-repo/portfolio",
+        repoUrl: "https://github.com/SezaimaruHaruchika/portfolio-site",
         imageUrl: "/portfolio.png",
       },
       {

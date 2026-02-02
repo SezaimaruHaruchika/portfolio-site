@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { arrays } from "@/lib/arrays";
-// AIで共通コンポーネントを作成 ▼
+// 共通コンポーネント
 import { SkillsCard } from "@/components/SkillsCard";
 import { HeroSection } from "@/components/HeroSection";
 import { ContactSection } from "@/components/ContactSection";

@@ -1,16 +1,14 @@
 // components/PortfolioButton.tsx
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-// Tabler Iconsの型定義のため
 import { TablerIcon } from "@tabler/icons-react"
 
-// propsの型定義
 interface PortfolioButtonProps {
   href: string;
   children: React.ReactNode;
-  icon?: TablerIcon | React.ElementType; // アイコンコンポーネントを受け取る
-  textType?: "primary" | "secondary" | "outline"; // ここで色を指定
-  colorType?: "black" | "blue" | "pink"; // ボタンの色タイプ
+  icon?: TablerIcon | React.ElementType;
+  textType?: "primary" | "secondary" | "outline"; // スタイル
+  colorType?: "black" | "blue" | "pink"; // カラー
   target?: "_blank" | "_self";
 }
 
@@ -23,8 +21,6 @@ export function PortfolioButton({
   target = "_blank" 
 }: PortfolioButtonProps) {
 
-  // textTypeに応じたクラス設定
-  // ※ shadcnのvariantを活用しつつ、Tailwindで微調整
   const getStyle = () => {
     switch (textType) {
       case "primary":
@@ -38,7 +34,6 @@ export function PortfolioButton({
     }
   }
 
-  //colorTypeに応じたクラス設定
   const getColorStyle = () => {
     switch (colorType) {
       case "black":
@@ -52,7 +47,6 @@ export function PortfolioButton({
     }
   }
 
-  // shadcnのvariantもtextTypeに合わせてマッピング
   const getVariant = () => {
     if (textType === "outline") return "outline"
     if (textType === "secondary") return "secondary"

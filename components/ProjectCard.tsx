@@ -2,7 +2,6 @@ import { PortfolioButton } from "@/components/PortfolioButton";
 import { IconExternalLink, IconBrandGithub } from "@tabler/icons-react";
 import Image from "next/image";
 
-// 型定義を少し緩くして、翻訳データからの入力を受け入れやすくします
 export interface ProjectData {
   title: string;
   description: string;
@@ -13,7 +12,6 @@ export interface ProjectData {
   imageUrl?: string;
 }
 
-// 追加のPropsとしてボタンのテキストを受け取ります
 interface ProjectCardProps extends ProjectData {
   viewAppText: string;
 }
@@ -53,7 +51,6 @@ export function ProjectCard({
           </div>
 
           <div className="pt-4 flex gap-4">
-            {/* demoUrlがある場合のみボタンを表示 */}
             {demoUrl && demoUrl !== "" && (
               <PortfolioButton
                 href={demoUrl}
